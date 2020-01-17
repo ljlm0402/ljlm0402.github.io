@@ -1,0 +1,23 @@
+{
+  "name": "hexo-theme-hipaper",
+  "version": "1.0.0",
+  "description": "A newspaper theme for Hexo.",
+  "author": "iTimeTraveler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iTimeTraveler/hexo-theme-hipaper"
+  },
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/iTimeTraveler/hexo-theme-hipaper",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-git": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1"
+  },
+  "dependencies": {
+    "hexo-generator-json-content": "^4.1.6"
+  }
+}

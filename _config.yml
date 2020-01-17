@@ -99,5 +99,5 @@ theme: hipaper
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repository: git@github.com:ljlm0402/github-blog.git
-  branch: gh-pages
+  repository: https://github.com/ljlm0402/ljlm0402.github.io.git
+  branch: master
