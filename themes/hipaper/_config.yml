@@ -23,14 +23,14 @@ favicon: css/images/favicon.ico
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
 avatar: 
   enable: true
-  width: 124
-  height: 124
+  width: 150
+  height: 100
   bottom: 10
-  url: https://hexo.io/logo.svg
+  url: css/images/logo.webp
 
 
 # AboutPage background, support multiple images.
-about_big_image: [css/images/pose01.jpg, https://source.unsplash.com/collection/954550/1920x1080, https://source.unsplash.com/collection/954550/1920x1081]
+about_big_image: false
 
 
 # Homepage thumbnail
@@ -57,11 +57,9 @@ widgets:
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
   Github: https://github.com/ljlm0402
-  Weibo: 
-  Twitter: 
-  Facebook: 
-  Google-plus: 
-  Instagram: 
+  Facebook: https://www.facebook.com/groups/765872100510405/
+  Zeit: https://resume.ljlm0402.now.sh/
+  Netlify: https://ljlm0402.netlify.com/
 
 
 # Search

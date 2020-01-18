@@ -1,13 +1,7 @@
 ---
 title: Hello World
-date: 2020-01-08 14:06:00
+date: 2020-01-01 00:00:00
 comments: true
-categories:
-    - Hello
-    - World
-tags:
-    - Begin
-    - Start
 photos:
     - https://raw.githubusercontent.com/iTimeTraveler/hexo-theme-hipaper/gh-pages/gallery/01.jpg
 ---
