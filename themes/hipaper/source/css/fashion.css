@@ -1051,7 +1051,7 @@ ul.widget-tab-nav {
 	overflow: hidden;
 	}
 .widget-entry-thumbnail img {
-	width: auto;
+	/* width: auto; */
 	height: 50px;
 	display: block;
 	transform: translate(-50%,-50%);
