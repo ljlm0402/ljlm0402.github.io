@@ -43,7 +43,22 @@
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <link rel="icon" href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else {%>css/images/favicon.ico<% } %>">
+  <link rel="shortcut icon" href="<%= config.root %>css/images/favicon/0.png?" type="image/x-icon" />
+  <link id="favicon" rel="icon" href="#" type="image/x-icon" />
+  <script>
+    let faviconRoute = '<%= config.root %>' + "css/images/favicon/";
+    let faviconNames = ["0.png", "1.png", "2.png", "3.png"];
+    let idx = 0;
+
+    setInterval(func, 300);
+
+    function func() {
+      document
+        .querySelector("#favicon")
+        .setAttribute("href", faviconRoute + faviconNames[idx++]);
+      idx %= faviconNames.length;
+    }
+  </script>
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
