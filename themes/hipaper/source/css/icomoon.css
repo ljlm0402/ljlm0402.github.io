@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rhdy7j');
-  src:  url('fonts/icomoon.eot?rhdy7j#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rhdy7j') format('truetype'),
-    url('fonts/icomoon.woff?rhdy7j') format('woff'),
-    url('fonts/icomoon.svg?rhdy7j#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3tx0a');
+  src:  url('fonts/icomoon.eot?3tx0a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3tx0a') format('truetype'),
+    url('fonts/icomoon.woff?3tx0a') format('woff'),
+    url('fonts/icomoon.svg?3tx0a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,15 +29,18 @@ i {
   line-height: 40px;
 }
 
+.icon-stackshare:before {
+  content: "\e900";
+}
 .icon-github:before {
   content: "\e901";
-}
-.icon-facebook:before {
-  content: "\ea91";
 }
 .icon-zeit:before {
   content: "\e902";
 }
 .icon-netlify:before {
   content: "\e903";
+}
+.icon-facebook:before {
+  content: "\ea91";
 }
