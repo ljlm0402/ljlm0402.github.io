@@ -80,6 +80,7 @@ $ git clone https://github.com/iTimeTraveler/hexo-theme-hipaper.git themes/hipap
 
 ```bash
 $ hexo server
+
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
@@ -243,13 +244,118 @@ $ git push -u origin site-source
 
 그 결과 별도의 `site-images` 브랜치를 생성해서 관리하였습니다.
 
-▾ _posts photos 작성법
+▾ photos 작성법
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/12.png)
 
 URL 요청으로 이미지를 가져오시면 더욱 효율적으로 포스팅을 할수있습니다.
 
-## 최종
+## 추가하기
+
+이제 기본적인 환경 셋팅은 완료하였습니다.
+
+좀더 나만의 홈페이지로 개선하기 위해서 몇가지 기능을 추가해보도록 하겠습니다.
+
+### Disqus 추가
+
+[DISQUS](https://disqus.com/)란, 손쉽게 댓글을 관리해주는 서비스입니다.
+
+해당 링크를 클릭하여 접속 후, `GET STARTED`를 클릭해줍니다.
+
+▾ Disqus 홈페이지
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/16.png)
+
+클릭 시, 회원가입과 로그인 화면이 나타나는데
+
+저는 Google 소셜 로그인으로 접속하였습니다.
+
+로그인이 완료되었으면 이제 두가지 선택 버튼이 나타납니다.
+
+`I want to comment on sites`, `I want to install Disqus on my site` 라는 문구 버튼 중에서
+
+`I want to install Disqus on my site`를 클릭해줍니다.
+
+▾ 선택 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/17.png)
+
+Create a new site 페이지에서 `Website Name`에 자신의 github page 주소를 기입해줍니다.
+
+그후 아래 선택은 원하시는걸로 선택하시고 `Create Site` 버튼을 클릭합니다.
+
+▾ Create a new site 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/18.png)
+
+그 다음 원하시는 서비스를 선택하는 화면이 나타납니다.
+
+스크롤을 내리다 보면 `Basic` 박스가 보입니다. 
+
+기본 서비스를 선택하여 줍니다.
+
+▾ Basic 선택 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/19.png)
+
+이제 여러가지 버튼이 보입니다.
+
+다양한 템플릿에 지원하는 페이지로 보이며 우리는 맨 하단으로 이동하여
+
+`I don't see my platform listed, install manually with Universal Code` 버튼을 클릭하여줍니다.
+
+▾ Install 선택 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/20.png)
+
+그 후에는 자바스크립트로 만들어진 코드를 자신의 홈페이지에 붙이라는 페이지가 나타납니다.
+
+저희가 필요한 정보는 `Shortname` 이라는 정보만 필요합니다.
+
+과감하게 좌측 상단 홈페이지 주소를 클릭하고 `Edit` 버튼을 클릭하여 줍니다.
+
+▾ Edit 선택 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/21.png)
+
+좌측 SITE 카테고리에서 `General` 클릭하면 `Shortname`라는 정보가 있습니다.
+
+자신의 Shortname 복사하고 홈페이지 소스로 돌아갑니다.
+
+▾ General 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/22.png)
+
+자신의 테마 폴더 안에 `_config.yml`에서 disqus_shortname에 아까 복사했던 Shortname을 붙여넣기합니다.
+
+▾ Shortname 설정
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/23.png)
+
+이제 마지막으로 자신이 원하는 포스팅에 Disqus를 활성화 시키기고 싶을 경우 포스팅 정보란을 수정합니다.
+
+comments라는 정보를 true로 설정합니다.
+
+▾ post 정보
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/24.png)
+
+그리고 마지막으로 홈페이지를 실행시켜 확인해봅니다.
+
+```bash
+$ hexo server
+
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
+```
+
+▾ 결과 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/25.png)
+
+<!-- ### Adsense 추가 -->
+
+<!-- ## 최종
 
 ▾ 브랜치 별로 결과물
 
@@ -257,4 +363,4 @@ URL 요청으로 이미지를 가져오시면 더욱 효율적으로 포스팅�
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/14.png)
 
-![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/15.png)
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/15.png) -->
