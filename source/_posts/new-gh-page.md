@@ -353,14 +353,83 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/25.png)
 
-<!-- ### Adsense 추가 -->
+### Google AdSense 추가
 
-<!-- ## 최종
+[Google AdSendse](https://www.google.com/adsense)란, 트래픽 수익을 얻을 수 있는 광고 마케팅 중 하나로 `구글(google)`에서 시작되었습니다.
 
-▾ 브랜치 별로 결과물
+즉, 자신의 페이지에 광고를 삽입하여 해당 사이트로 접속시 광고 트래픽에 따른 수익을 얻을수 있는 서비스입니다.
 
-![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/13.png)
+해당 링크를 통해 접속 후 자신의 구글 계정을 로그인 해줍니다.
 
-![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/14.png)
+웹 사이트, 이메일 주소를 기입 후 `저장하고 계속하기` 버튼을 클릭합니다.
 
-![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/15.png) -->
+▾ Google AdSense | 가입 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/26.png)
+
+그리고 home 화면이 나타납니다.
+
+home 화면에서 알려주는 순서대로 코드를 복사해줍니다.
+
+▾ Google AdSense | 가입 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/27.png)
+
+이제 복사한 코드를 자신의 홈페이지에 삽입하겠습니다.
+
+자신의 테마 폴더안에 `_config.yml`에서 새로운 정보를 셋팅해줍니다.
+
+에드센스 코드에서 data-ad-client 코드를 입력해줍니다.
+
+▾ themes/hipaper/_config.yml 코드
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/28.png)
+
+이제 adsense 스크립트 적용 파일을 만들어 보도록 하겠습니다.
+
+자신의 테마 폴더안에 `layout/_partial` 안에 `google-adsense.ejs` 파일을 생성합니다.
+
+그 후, 다음과 같이 코드를 작성합니다.
+
+▾ google-adsense.ejs 코드
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/29.png)
+
+이제 해당 파일을 불러오도록 하겠습니다.
+
+자신의 테마 폴더안에 `layout/_partial/head.ejs`로 이동하여 해당 코드를 삽입하여 줍니다.
+
+▾ head.ejs 코드
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/30.png)
+
+여기까지 완료 하였으면 홈페이지를 실행시켜 봅니다.
+
+그 후 F12 개발자 모드로 들어가서 Sources 탭에서 자신의 코드가 정상적으로 삽입되었는지 확인합니다.
+
+```bash
+$ hexo server
+```
+
+▾ 홈페이지 Sources 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/31.png)
+
+정상적으로 자신의 코드가 삽입되었으면, 이제 배포를 해줍니다.
+
+```bash
+$ hexo clean
+$ hexo deploy
+```
+
+마지막으로 Google AdSense 홈페이지에서 `코드를 사이트에 붙여넣었습니다.` 체크 박스를 체크하고
+
+완료 버튼을 눌러줍니다.
+
+그러면 모달창이 나타나며 코드 확인 완료가 끝났습니다.
+
+몇일 후에 확인해보도록 하겠습니다.
+
+▾ 코드 확인 완료 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/32.png)

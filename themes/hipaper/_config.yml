@@ -106,6 +106,9 @@ google_plus:
 fb_admins:
 fb_app_id:
 
+# Adsense
+google_adsense: 1481380781138607
+
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:

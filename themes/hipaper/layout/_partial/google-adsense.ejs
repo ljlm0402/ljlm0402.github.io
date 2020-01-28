@@ -1,0 +1,9 @@
+<% if (theme.google_adsense){ %>
+<script>
+var ads = document.createElement('script');
+ads.async = true;
+ads.setAttribute('data-ad-client', 'ca-pub-<%= theme.google_adsense %>');
+ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+(document.getElementsByTagName('head')[0]).appendChild(ads);
+</script>
+<% } %>
