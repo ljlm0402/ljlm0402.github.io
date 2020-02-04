@@ -2,15 +2,15 @@
 title: Apple 2019 맥북 프로 16인치
 date: 2020-01-13 00:00:00
 comments: true
-categorys:
+categories:
     - daliy
 tags:
-    - daliy
+    - macbook
 photos:
     - https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/macbook/logo.jpeg
 ---
 
-2020년, 애플에서 16인치 맥북 프로를 공개하였다. 구매 후기와 더불어 회사에서 사용하던 13인치와 비교 글을 포스팅 하겠습니다.
+애플에서 16인치 맥북 프로를 공개하였다. 구매 후기와 더불어 13인치와 비교 글을 포스팅 하겠습니다.
 
 <!-- more -->
 

@@ -2,7 +2,7 @@
 title: 새해, 새로운 페이지
 date: 2020-01-01 00:00:00
 comments: true
-categorys:
+categories:
     - begin
 tags:
     - begin
