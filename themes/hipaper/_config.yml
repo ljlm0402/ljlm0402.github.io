@@ -26,7 +26,7 @@ avatar:
   width: 150
   height: 100
   bottom: 10
-  url: css/images/logo.webp
+  url: css/images/logo.gif
 
 
 # AboutPage background, support multiple images.
