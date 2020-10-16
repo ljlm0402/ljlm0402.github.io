@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png">
 <meta property="article:published_time" content="2020-01-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-15T12:20:31.995Z">
+<meta property="article:modified_time" content="2020-10-16T14:57:06.042Z">
 <meta property="article:author" content="Kyungmi Lim">
 <meta property="article:tag" content="begin">
 <meta name="twitter:card" content="summary">
@@ -140,7 +140,7 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png" target="_blank" rel="gallery_ckgaske6i00020noo77ylfcjq noopener">
+      <a class="article-gallery-img fancybox" href="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png" target="_blank" rel="gallery_ckgcdlhgl0002zgox0qdq13s0 noopener">
         <img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png" itemprop="image">
       </a>
     
@@ -220,7 +220,7 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 
 <p>▾ 레포지토리 확인</p>
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/6.png" alt=""></p>
-<p>정상적으로 push가 완료되었습니다. 그 후 호스팅 브랜치를 설정해줘야합니다.</p>
+<p>정상적으로 push가 완료되었습니다. 그 후 호스팅 branch를 설정해줘야합니다.</p>
 <p>▾ 셋팅 클릭</p>
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/7.png" alt=""></p>
 <p>우측 상단에 <code>Settings</code>를 클릭하고 스크롤를 내립니다.</p>
@@ -230,9 +230,9 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 <blockquote>
 <p>Your GitHub Pages site is currently being built from the master branch. </p>
 </blockquote>
-<p>간단하게 번역해보면 “너의 Github Pages site는 현재 마스터 브랜치에 구축되어있다.”</p>
-<p>이 내용을 토대로 브랜치를 나누어서 파일을 관리하도록 하겠습니다.</p>
-<p>우선 기본적으로 정적 호스팅을 하기위해선 <code>master</code> 브랜치에 build 된 파일들이 있어야합니다.</p>
+<p>간단하게 번역해보면 “너의 Github Pages site는 현재 마스터 branch에 구축되어있다.”</p>
+<p>이 내용을 토대로 branch를 나누어서 파일을 관리하도록 하겠습니다.</p>
+<p>우선 기본적으로 정적 호스팅을 하기위해선 <code>master</code> branch에 build 된 파일들이 있어야합니다.</p>
 <p>저희가 우선적으로 했던 hexo server로 동작은 hexo라는 프레임워크에서 제공하는 기능으로 정적 페이지가 아닙니다.</p>
 <p>여기서 <code>hexo generate</code>를 사용해 보겠습니다.</p>
 <p>작업중인 프로젝트로 가서 명령어를 쳐줍니다.</p>
@@ -253,19 +253,19 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 
 <p>그 후 자신의 깃허브 페이지 주소로 접속하면 정상적으로 확인하실수 있습니다.</p>
 <p>자세한 사항은 <a href="https://hexo.io/docs/github-pages#Private-repository" target="_blank" rel="noopener">GitHub Pages | Hexo</a> 확인하실 수 있습니다.</p>
-<h3 id="브랜치-분리하기"><a href="#브랜치-분리하기" class="headerlink" title="브랜치 분리하기"></a>브랜치 분리하기</h3><p>위에서 언급하였듯 <code>master</code> 브랜치에는 정적 페이지 소스를 가지고 있어야 합니다.</p>
+<h3 id="branch로-분리하기"><a href="#branch로-분리하기" class="headerlink" title="branch로 분리하기"></a>branch로 분리하기</h3><p>위에서 언급하였듯 <code>master</code> branch에는 정적 페이지 소스를 가지고 있어야 합니다.</p>
 <p>그렇다면, 현재 hexo 생성하는 소스는 별도로 가지고 있어야하는데 </p>
-<p>이 또한 해당 레포지토리에 브랜치를 분리하여 관리하도록 하겠습니다.</p>
+<p>이 또한 해당 레포지토리에 branch를 분리하여 관리하도록 하겠습니다.</p>
 <p>우선 제가 현재 분리한 구조입니다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">    master          <span class="comment"># 정적 페이지 소스</span></span><br><span class="line">    site-images     <span class="comment"># 사이트 이미지 </span></span><br><span class="line">    site-source     <span class="comment"># hexo 소스</span></span><br></pre></td></tr></table></figure>
 
-<p><code>master</code> 브랜치에서는 일절 작업을 하지 않고 </p>
-<p><code>site-source</code> 브랜치에서 <code>deploy</code>를 통해서만 배포를 할 계획입니다.</p>
+<p><code>master</code> branch에서는 일절 작업을 하지 않고 </p>
+<p><code>site-source</code> branch에서 <code>deploy</code>를 통해서만 배포를 할 계획입니다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b site-source</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"site-source commit"</span></span><br><span class="line">$ git push -u origin site-source</span><br></pre></td></tr></table></figure>
 
-<p>이제 브랜치 분리가 되었습니다.</p>
+<p>이제 branch 분리가 되었습니다.</p>
 <h3 id="이미지-파일-관리하기"><a href="#이미지-파일-관리하기" class="headerlink" title="이미지 파일 관리하기"></a>이미지 파일 관리하기</h3><p>이제 마지막으로 의문점이 하나 남아있습니다.</p>
-<p>바로 <code>site-images</code> 브랜치를 생성했는지에 대한 의문입니다.</p>
+<p>바로 <code>site-images</code> branch를 생성했는지에 대한 의문입니다.</p>
 <p>예제 홈페이지로 이동해보겠습니다.</p>
 <p>▾ <a href="https://itimetraveler.github.io/hexo-theme-hipaper/index.html" target="_blank" rel="noopener">hipaper 샘플 페이지 - HOME</a></p>
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/10.png" alt=""></p>
@@ -273,9 +273,9 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/11.png" alt=""></p>
 <p>우측 <code>RECENT POSTS</code>를 보시면 엑박 표시가 나타납니다.</p>
 <p>이것은 해당 포스팅 이미지 경로가 상대로 경로로 지정되어 <code>hexo generate</code> 경로 설정이 잘못된 경우입니다.</p>
-<p>아까 위에 언급했든 <code>master</code> 브랜치에서는 일절 작업을 하지 않는다고 했습니다.</p>
+<p>아까 위에 언급했든 <code>master</code> branch에서는 일절 작업을 하지 않는다고 했습니다.</p>
 <p>그래서 가장 편리하게 경로를 설정해줄수 있는 방법은 별도의 공간에 두어서 url로 요청하는 방식입니다.</p>
-<p>그 결과 별도의 <code>site-images</code> 브랜치를 생성해서 관리하였습니다.</p>
+<p>그 결과 별도의 <code>site-images</code> branch를 생성해서 관리하였습니다.</p>
 <p>▾ photos 작성법</p>
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/12.png" alt=""></p>
 <p>URL 요청으로 이미지를 가져오시면 더욱 효율적으로 포스팅을 할수있습니다.</p>
@@ -366,6 +366,25 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 <p>몇일 후에 확인해보도록 하겠습니다.</p>
 <p>▾ 코드 확인 완료 화면</p>
 <p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/32.png" alt=""></p>
+<h3 id="GitHub-Action-만들기"><a href="#GitHub-Action-만들기" class="headerlink" title="GitHub Action 만들기"></a>GitHub Action 만들기</h3><p>최근, 블로그를 다시 하면서 추가적인 기능을 도입하였다.</p>
+<p>바로 자동화 배포 기능으로 <a href="https://github.com/features/actions" target="_blank" rel="noopener">GitHub Actions</a>을 도입하였다.</p>
+<p>Hexo 홈페이지에서도 Github Pages 배포로 GitHub Actions 샘플 코드가 존재하였다.</p>
+<p>▾ GitHub Actions 코드</p>
+<p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/33.png" alt=""></p>
+<ul>
+<li><p>default branch : push 이벤트를 발생할 branch로 <code>site-source</code>로 지정하였습니다.</p>
+</li>
+<li><p>deploying branch : publish branch로 <code>master</code>로 지정하였습니다.</p>
+</li>
+</ul>
+<p>▾ Actions 완료 화면</p>
+<p><img src="https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/34.png" alt=""></p>
+<p>정상적으로 성공하였습니다.</p>
+<h2 id="마치며"><a href="#마치며" class="headerlink" title="마치며"></a>마치며</h2><p>강력한 블로그 프레임워크 <code>Hexo</code>를 사용하여 빠르고 간편하게 블로그 홈페이지를 만들어 보았습니다.</p>
+<p>branch를 분리하여 관리하는 방식은 타 포스팅과 차별점이 있었고 여러모로 사용도가 높다고 생각합니다.</p>
+<p>최근, 개인 블로그를 개발하시는 분들이 많으신데 해당 포스팅을 참고하셔서 좋은 블로그를 개발에 도움이 되었으면 좋겠습니다.</p>
+<p>해당 포스팅을 마무리합니다.</p>
+<p>마지막까지 읽어주신점 정말 감사합니다.</p>
 
       
     </div>
@@ -435,7 +454,7 @@ ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#시작하기"><span class="nav-number">1.</span> <span class="nav-text">시작하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo란"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo란 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#설치"><span class="nav-number">1.1.1.</span> <span class="nav-text">설치</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#테마-적용"><span class="nav-number">1.1.2.</span> <span class="nav-text">테마 적용</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#배포하기"><span class="nav-number">2.</span> <span class="nav-text">배포하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#레포지토리-생성"><span class="nav-number">2.1.</span> <span class="nav-text">레포지토리 생성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#배포하기-1"><span class="nav-number">2.2.</span> <span class="nav-text">배포하기</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#브랜치-분리하기"><span class="nav-number">2.3.</span> <span class="nav-text">브랜치 분리하기</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#이미지-파일-관리하기"><span class="nav-number">2.4.</span> <span class="nav-text">이미지 파일 관리하기</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#추가하기"><span class="nav-number">3.</span> <span class="nav-text">추가하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disqus-추가"><span class="nav-number">3.1.</span> <span class="nav-text">Disqus 추가</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-AdSense-추가"><span class="nav-number">3.2.</span> <span class="nav-text">Google AdSense 추가</span></a></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#시작하기"><span class="nav-number">1.</span> <span class="nav-text">시작하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo란"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo란 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#설치"><span class="nav-number">1.1.1.</span> <span class="nav-text">설치</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#테마-적용"><span class="nav-number">1.1.2.</span> <span class="nav-text">테마 적용</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#배포하기"><span class="nav-number">2.</span> <span class="nav-text">배포하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#레포지토리-생성"><span class="nav-number">2.1.</span> <span class="nav-text">레포지토리 생성</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#배포하기-1"><span class="nav-number">2.2.</span> <span class="nav-text">배포하기</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#branch로-분리하기"><span class="nav-number">2.3.</span> <span class="nav-text">branch로 분리하기</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#이미지-파일-관리하기"><span class="nav-number">2.4.</span> <span class="nav-text">이미지 파일 관리하기</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#추가하기"><span class="nav-number">3.</span> <span class="nav-text">추가하기</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disqus-추가"><span class="nav-number">3.1.</span> <span class="nav-text">Disqus 추가</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-AdSense-추가"><span class="nav-number">3.2.</span> <span class="nav-text">Google AdSense 추가</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Action-만들기"><span class="nav-number">3.3.</span> <span class="nav-text">GitHub Action 만들기</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#마치며"><span class="nav-number">4.</span> <span class="nav-text">마치며</span></a></li></ol>
     
     </div>
   </aside>
