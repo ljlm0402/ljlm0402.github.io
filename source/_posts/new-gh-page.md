@@ -123,7 +123,7 @@ $ git push -u origin master
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/6.png)
 
-정상적으로 push가 완료되었습니다. 그 후 호스팅 브랜치를 설정해줘야합니다.
+정상적으로 push가 완료되었습니다. 그 후 호스팅 branch를 설정해줘야합니다.
 
 ▾ 셋팅 클릭
 
@@ -139,11 +139,11 @@ $ git push -u origin master
 
 > Your GitHub Pages site is currently being built from the master branch. 
 
-간단하게 번역해보면 "너의 Github Pages site는 현재 마스터 브랜치에 구축되어있다."
+간단하게 번역해보면 "너의 Github Pages site는 현재 마스터 branch에 구축되어있다."
 
-이 내용을 토대로 브랜치를 나누어서 파일을 관리하도록 하겠습니다.
+이 내용을 토대로 branch를 나누어서 파일을 관리하도록 하겠습니다.
 
-우선 기본적으로 정적 호스팅을 하기위해선 `master` 브랜치에 build 된 파일들이 있어야합니다.
+우선 기본적으로 정적 호스팅을 하기위해선 `master` branch에 build 된 파일들이 있어야합니다.
 
 저희가 우선적으로 했던 hexo server로 동작은 hexo라는 프레임워크에서 제공하는 기능으로 정적 페이지가 아닙니다.
 
@@ -188,13 +188,13 @@ $ hexo deploy
 
 자세한 사항은 [GitHub Pages | Hexo](https://hexo.io/docs/github-pages#Private-repository) 확인하실 수 있습니다.
 
-### 브랜치 분리하기
+### branch로 분리하기
 
-위에서 언급하였듯 `master` 브랜치에는 정적 페이지 소스를 가지고 있어야 합니다.
+위에서 언급하였듯 `master` branch에는 정적 페이지 소스를 가지고 있어야 합니다.
 
 그렇다면, 현재 hexo 생성하는 소스는 별도로 가지고 있어야하는데 
 
-이 또한 해당 레포지토리에 브랜치를 분리하여 관리하도록 하겠습니다.
+이 또한 해당 레포지토리에 branch를 분리하여 관리하도록 하겠습니다.
 
 우선 제가 현재 분리한 구조입니다.
 
@@ -205,9 +205,9 @@ $ git branch
     site-source     # hexo 소스
 ```
 
-`master` 브랜치에서는 일절 작업을 하지 않고 
+`master` branch에서는 일절 작업을 하지 않고 
 
-`site-source` 브랜치에서 `deploy`를 통해서만 배포를 할 계획입니다.
+`site-source` branch에서 `deploy`를 통해서만 배포를 할 계획입니다.
 
 ```bash
 $ git checkout -b site-source
@@ -216,13 +216,13 @@ $ git commit -m "site-source commit"
 $ git push -u origin site-source
 ```
 
-이제 브랜치 분리가 되었습니다.
+이제 branch 분리가 되었습니다.
 
 ### 이미지 파일 관리하기
 
 이제 마지막으로 의문점이 하나 남아있습니다.
 
-바로 `site-images` 브랜치를 생성했는지에 대한 의문입니다.
+바로 `site-images` branch를 생성했는지에 대한 의문입니다.
 
 예제 홈페이지로 이동해보겠습니다.
 
@@ -238,11 +238,11 @@ $ git push -u origin site-source
 
 이것은 해당 포스팅 이미지 경로가 상대로 경로로 지정되어 `hexo generate` 경로 설정이 잘못된 경우입니다.
 
-아까 위에 언급했든 `master` 브랜치에서는 일절 작업을 하지 않는다고 했습니다.
+아까 위에 언급했든 `master` branch에서는 일절 작업을 하지 않는다고 했습니다.
 
 그래서 가장 편리하게 경로를 설정해줄수 있는 방법은 별도의 공간에 두어서 url로 요청하는 방식입니다.
 
-그 결과 별도의 `site-images` 브랜치를 생성해서 관리하였습니다.
+그 결과 별도의 `site-images` branch를 생성해서 관리하였습니다.
 
 ▾ photos 작성법
 
@@ -433,3 +433,37 @@ $ hexo deploy
 ▾ 코드 확인 완료 화면
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/32.png)
+
+### GitHub Action 만들기
+
+최근, 블로그를 다시 하면서 추가적인 기능을 도입하였다.
+
+바로 자동화 배포 기능으로 [GitHub Actions](https://github.com/features/actions)을 도입하였다.
+
+Hexo 홈페이지에서도 Github Pages 배포로 GitHub Actions 샘플 코드가 존재하였다.
+
+▾ GitHub Actions 코드
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/33.png)
+
+* default branch : push 이벤트를 발생할 branch로 `site-source`로 지정하였습니다.
+
+* deploying branch : publish branch로 `master`로 지정하였습니다.
+
+▾ Actions 완료 화면
+
+![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/34.png)
+
+정상적으로 성공하였습니다.
+
+## 마치며
+
+강력한 블로그 프레임워크 `Hexo`를 사용하여 빠르고 간편하게 블로그 홈페이지를 만들어 보았습니다.
+
+branch를 분리하여 관리하는 방식은 타 포스팅과 차별점이 있었고 여러모로 사용도가 높다고 생각합니다.
+
+최근, 개인 블로그를 개발하시는 분들이 많으신데 해당 포스팅을 참고하셔서 좋은 블로그를 개발에 도움이 되었으면 좋겠습니다.
+
+해당 포스팅을 마무리합니다.
+
+마지막까지 읽어주신점 정말 감사합니다.

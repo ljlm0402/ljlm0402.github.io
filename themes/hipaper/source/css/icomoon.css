@@ -44,3 +44,6 @@ i {
 .icon-facebook:before {
   content: "\ea91";
 }
+.icon-profile:before {
+  content: "\e923";
+}
