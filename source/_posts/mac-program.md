@@ -1,9 +1,8 @@
 ---
 title: 다양한 Mac 응용프로그램을 소개합니다.
-date: 2020-12-08 00:00:00
+date: 2020-12-08 09:00:00
 comments: true
 categories:
-  - daliy
   - my-money-my-buy
 tags:
   - macbook
