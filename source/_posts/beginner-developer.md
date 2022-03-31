@@ -1,5 +1,5 @@
 ---
-title: [Q&A] 개발자 취업에 관하여
+title: Q&A 개발자 취업에 관하여
 date: 2022-03-30 15:00:00
 comments: true
 categories:
