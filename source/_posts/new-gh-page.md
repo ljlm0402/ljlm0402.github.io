@@ -3,11 +3,11 @@ title: 새해, 새로운 페이지
 date: 2020-01-01 00:00:00
 comments: true
 categories:
-    - begin
+  - begin
 tags:
-    - begin
+  - begin
 photos:
-    - https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png
+  - https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/logo.png
 ---
 
 2020년, 🐭하얀쥐띠 경자년, 새해가 밝았습니다. 새해 목표를 다지면서 가장 처음으로 진행하는 프로젝트는 새로운 깃허브 페이지 개선 프로젝트입니다. 개선하는 그 과정에 대해서 포스팅 하겠습니다.
@@ -18,13 +18,13 @@ photos:
 
 ### Hexo란 ?
 
-[Hexo](https://hexo.io/ko/index.html)란, 빠르고 간단하고 강력한 블로그 프레임워크라고 홈페이지에 게시되어 있습니다. 
+[Hexo](https://hexo.io/ko/index.html)란, 빠르고 간단하고 강력한 블로그 프레임워크라고 홈페이지에 게시되어 있습니다.
 
 이처럼 블로그 개발에 최적화 된 프레임워크를 사용해보도록 하겠습니다.
 
 #### 설치
 
-``` bash
+```bash
 $ npm install -g hexo-cli
 ```
 
@@ -50,7 +50,7 @@ hexo init blog
 
 기존의 [melody](https://molunerfinn.com/) 테마보다 직관적이며 포스팅에 좀더 강력한 테마를 선택하였습니다.
 
-개인적으로 추천드리는 테마는 [landspcape](https://hexojs.github.io/hexo-theme-landscape/), [icarus](https://blog.zhangruipeng.me/hexo-theme-icarus/), [PPOffice](https://blog.zhangruipeng.me/hexo-theme-hueman/) 입니다. 
+개인적으로 추천드리는 테마는 [landspcape](https://hexojs.github.io/hexo-theme-landscape/), [icarus](https://blog.zhangruipeng.me/hexo-theme-icarus/), [PPOffice](https://blog.zhangruipeng.me/hexo-theme-hueman/) 입니다.
 
 많은 분들이 사용하고 있으며 포스팅 글에 최적화 되어있는 테마입니다.
 
@@ -137,7 +137,7 @@ $ git push -u origin master
 
 `Github Pages`라는 제목의 설정란을 확인하면 `Source`가 존재합니다.
 
-> Your GitHub Pages site is currently being built from the master branch. 
+> Your GitHub Pages site is currently being built from the master branch.
 
 간단하게 번역해보면 "너의 Github Pages site는 현재 마스터 branch에 구축되어있다."
 
@@ -155,7 +155,7 @@ $ git push -u origin master
 $ hexo generate
 ```
 
-그렇게되면 `public`이라는 폴더가 생성되었습니다. 
+그렇게되면 `public`이라는 폴더가 생성되었습니다.
 
 ### 배포하기
 
@@ -192,7 +192,7 @@ $ hexo deploy
 
 위에서 언급하였듯 `master` branch에는 정적 페이지 소스를 가지고 있어야 합니다.
 
-그렇다면, 현재 hexo 생성하는 소스는 별도로 가지고 있어야하는데 
+그렇다면, 현재 hexo 생성하는 소스는 별도로 가지고 있어야하는데
 
 이 또한 해당 레포지토리에 branch를 분리하여 관리하도록 하겠습니다.
 
@@ -201,11 +201,11 @@ $ hexo deploy
 ```bash
 $ git branch
     master          # 정적 페이지 소스
-    site-images     # 사이트 이미지 
+    site-images     # 사이트 이미지
     site-source     # hexo 소스
 ```
 
-`master` branch에서는 일절 작업을 하지 않고 
+`master` branch에서는 일절 작업을 하지 않고
 
 `site-source` branch에서 `deploy`를 통해서만 배포를 할 계획입니다.
 
@@ -290,7 +290,7 @@ Create a new site 페이지에서 `Website Name`에 자신의 github page 주소
 
 그 다음 원하시는 서비스를 선택하는 화면이 나타납니다.
 
-스크롤을 내리다 보면 `Basic` 박스가 보입니다. 
+스크롤을 내리다 보면 `Basic` 박스가 보입니다.
 
 기본 서비스를 선택하여 줍니다.
 
@@ -381,7 +381,7 @@ home 화면에서 알려주는 순서대로 코드를 복사해줍니다.
 
 에드센스 코드에서 data-ad-client 코드를 입력해줍니다.
 
-▾ themes/hipaper/_config.yml 코드
+▾ themes/hipaper/\_config.yml 코드
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/28.png)
 
@@ -446,9 +446,9 @@ Hexo 홈페이지에서도 Github Pages 배포로 GitHub Actions 샘플 코드�
 
 ![](https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/new-gh-page/33.png)
 
-* default branch : push 이벤트를 발생할 branch로 `site-source`로 지정하였습니다.
+- default branch : push 이벤트를 발생할 branch로 `site-source`로 지정하였습니다.
 
-* deploying branch : publish branch로 `master`로 지정하였습니다.
+- deploying branch : publish branch로 `master`로 지정하였습니다.
 
 ▾ Actions 완료 화면
 

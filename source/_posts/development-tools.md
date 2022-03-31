@@ -1,26 +1,18 @@
 ---
-title: COVIE-19로 인한 트렌드의 변화
-date: 2020-12-08 14:00:00
+title: 개발도구 유목민의 정착기
+date: 2022-03-31 10:30:00
 comments: true
 categories:
-  - COVIE-19
+  - Development
 tags:
   - trends
-  - recruit
-  - careers
 photos:
   - https://raw.githubusercontent.com/ljlm0402/ljlm0402.github.io/site-images/covie-19/logo.jpg
 ---
 
-COVIE-19로 인한 사회적 이슈 및 트렌드의 변화에 대한 고촬입니다.
+개발도구를 찾아 떠나는 유목민의 정착기입니다.
 
 <!-- more -->
-
-어느덧, 2020년이 지나가고있습니다. 올 한해를 한 단어로 표현한다면 `COVIE-19`라고 표현하고 싶습니다.
-
-현재 대한민국은 2.5 단계 사회적 거리두기가 실행되고 있습니다. 올해 초부터 말까지 코로나는 지속적으로 확진자가 늘어나면서 국민들의 불안이 더욱 커졌습니다.
-
-그에 따라, 사회, 문화, 기술 등 다양한 변화를 일으켰으며, 어떤것들이 변화하였는지 트렌드를 살펴보겠습니다.
 
 ### 코로나 확진자 현황
 
